@@ -1,0 +1,11 @@
+基本规范
+
+1、HTML5 doctype
+
+<!DOCTYPE html>
+<html>
+  <head>
+  </head>
+</html>
+
+2、字符编码
