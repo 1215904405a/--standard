@@ -9,3 +9,29 @@
 </html>
 
 2、字符编码
+
+一般统一使用UTF-8字符编码
+
+3、Language attribute
+
+根据HTML5规范：
+鼓励在html元素上指定 lang 属性，来指出页面的语言，有助于语言合成工具发音，有助翻译工具使用。
+
+4、IE 兼容模式
+
+Internet Explorer支持使用兼容性<meta>标签来指定使用什么版本的IE来渲染页面，如果不是特殊要求，通常通过edge mode来通知IE使用最新的兼容模式。
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+
+5、引入css和javascript
+
+根据html5规范，通常在引入css和javascript时不需要指明type，因为text/css和text/javascript分别是他们的默认值。
+<!DOCTYPE html>
+<html>
+  <head>
+  <link ref="stylesheet" href="code-guide.css" />
+  <script src="example.js"></script>
+  </head>
+</html>
+此外，引入css必须在<head></head>标签里引入。对于引入javascript，除了基础库等比较基础性的脚本文件，其他都在靠近body结束标签前面引入。
+
+6、缩进使用两个空格
