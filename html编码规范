@@ -35,3 +35,45 @@ Internet Explorer支持使用兼容性<meta>标签来指定使用什么版本的
 此外，引入css必须在<head></head>标签里引入。对于引入javascript，除了基础库等比较基础性的脚本文件，其他都在靠近body结束标签前面引入。
 
 6、缩进使用两个空格
+<!-- bad -->
+<div>
+    <p>ali</p>
+</div>
+<!-- good -->
+<div>
+  <p>ali</p>
+</div>
+
+7、标签名称和标签属性统一使用小写
+<!-- bad -->
+<Div Id="test">
+</Div>
+<!-- good -->
+<div id="test">
+</div>
+
+8、建议的html脚手架
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta lang="zh">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <meta name="description" content="">
+    <meta name="keyword" content="">
+    <title>淘宝网</title>
+    <link rel="stylesheet" href="example.css">
+  </head>
+  <body>
+    <script src="example.js"></script>
+  </body>
+</html>
+
+属性规范
+
+1、属性引号用双引号
+<link ref="stylesheet" href="example.css">
+
+2、Boolean属性
+
