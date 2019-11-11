@@ -76,4 +76,47 @@ Internet Explorer支持使用兼容性<meta>标签来指定使用什么版本的
 <link ref="stylesheet" href="example.css">
 
 2、Boolean属性
+Boolean属性指不需要声明取值的属性。
+<!-- bad -->
+<input type="text" disabled="disabled">
+<!-- good -->
+<input type="text" disabled>
+
+3、自定义属性
+建议自定义属性必须data-为前缀
+
+4、属性顺序
+HTML属性应该按照特定的顺序出现以保证易读性，而且一致的属性顺序可能提升1.5%的gzip 压缩率
+class 为高可用组件设计
+id,name
+data-*
+...
+
+<!-- good -->
+<a class="..." id="..." data-modal="toggle" href="#">
+</a>
+
+标签规范
+
+不要在自动闭合标签的结尾处使用斜线，如<br>、<hr>、<input>、<meta>、<source>
+
+命名规范
+
+属性 data-
+class命名和css编码保持一致
+id命名，js使用的钩子时，以J_开头，大驼峰
+
+多媒体退化
+
+1、为img标签添加alt属性以声明替代文本；
+2、在多媒体标签内部提供指示浏览器不支持该标签的说明，如object、audio、video
+<!-- good -->
+<audio controls>
+  <source src="horse.mp3" type="audio/mpeg">
+  your browser does not support the audio tag.
+</audio>
+
+注释规范
+
+由于html代码一般不会经过预处理，出于安全考虑，html代码中不能出现任何关于业务相关敏感信息的注释。
 
