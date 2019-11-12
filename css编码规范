@@ -1,0 +1,30 @@
+基本规范
+缩进使用两个空格，在每个声明块的左花括号前添加一个空格，右花括号应当单独成行，:后面应该插入一个空格，前面无空格，
+所有声明语句都以分号结尾，不能省略不写
+.mod-example {
+  padding-left: 15px;
+}
+
+选择器规范
+1、为选择器分组时，将单独的选择器单独放在一行
+/* good */
+.selector,
+.selector-secondary {
+  padding-left: 15px;
+}
+
+2、为选择器中的属性添加双引号
+/* good */
+.selector[type="text"] {
+  padding-left: 15px;
+}
+
+3、建议选择器层级不要超过5级
+/* bad */
+.main .top .left .mod-a .content .detail {
+  padding-left: 15px;
+}
+
+属性规范
+
+属性顺序
