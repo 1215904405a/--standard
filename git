@@ -1,0 +1,13 @@
+feat: 新增功能。
+fix: 修复 bug。
+docs: 文档相关的改动。
+style: 对代码的格式化改动，代码逻辑并未产生任何变化。
+test: 新增或修改测试用例。
+refactor: 重构代码或其他优化举措。
+chore: 项目工程方面的改动，代码逻辑并未产生任何变化。
+
+参考：
+https://github.com/angular/angular.js/blob/master/CONTRIBUTING.md
+https://docs.google.com/document/d/1QrDFcIiPjSLDn3EL15IJygNPiHORgU1_OOAqWjiDU5Y/edit#heading=h.j8e4paqkfz0q
+http://karma-runner.github.io/0.13/dev/git-commit-msg.html
+https://stackoverflow.com/questions/3580013/should-i-use-past-or-present-tense-in-git-commit-messages
