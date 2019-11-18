@@ -27,4 +27,56 @@
 
 属性规范
 
-属性顺序
+1、属性顺序
+定位（position、left、right、top、bottom、z-index）
+盒子模型（display、float、width、height、margin、padding、border、border-radius）
+排印（font、color、background、line-height、text-align）
+
+2、简写形式的属性声明
+background font一般不要简写
+
+3、0和单位
+一般0后面不要加单位
+
+4、颜色十六进制表示法
+在可能的情况下，使用 3 个字符的十六进制表示法，并始终使用小写的十六进制数字
+应避免16进制表示法与rgb表示法混用的情况，并优先使用16进制表示法
+
+5、小数
+对于使用到小数的情况，省略前边的 0
+
+6、引号
+属性选择器或属性值用双引号 "" 括起来，而 URI 值 url() 不要使用任何引号
+/* good */
+body {
+  font-family: "open sans", arial, sans-serif;
+  background-image: url(http://taobao.com/);
+}
+
+7、自定义font-family
+对于自定义font-family命名，必须使用业务域名前缀作为开始，
+@font-face {
+  font-family: yewu-fontcont;
+  src: url(...);
+}
+
+8、媒体查询（Media query）规范
+媒体查询建议根据需要采用下面两种组织形式：
+将媒体查询放在尽可能相关规则的附近，不要放在文档底部，否则容易被后来维护的人遗忘
+媒体查询针对每一个种屏幕（大、中、小）的分别单独组织为一个文件
+
+注释规范
+
+代码注释
+代码是由人来编写和维护的。保证你的代码是描述性的，包含好的注释，并且容易被他人理解。好的代码注释传达上下文和目标。不要简单地重申组件或者 class 名称。
+/* bad */
+
+/* Modal header */
+.modal-header {
+}
+
+/* good */
+
+/* Wrapping element for .modal-title and .modal-close */
+.modal-header {
+}
