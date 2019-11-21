@@ -1,4 +1,6 @@
-参考：https://codeguide.co/
+参考：
+https://codeguide.co/
+https://www.w3.org/Style/CSS/
 
 基本规范
 缩进使用两个空格，在每个声明块的左花括号前添加一个空格，右花括号应当单独成行，:后面应该插入一个空格，前面无空格，
